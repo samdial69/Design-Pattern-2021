@@ -51,7 +51,7 @@ position.ajoute(vitesse.produit(deltaT));
  * @param deltaT : une durée très courte
  * 
  * */
-public static void mouvementUniformémentAccéléré(Vecteur position, Vecteur vitesse, Vecteur accélération, double deltaT)
+public static void mouvementUniformementAccelere(Vecteur position, Vecteur vitesse, Vecteur accélération, double deltaT)
 {
 mouvementRectiligneUniforme( position, vitesse, deltaT);
 position.ajoute(accélération.produit(0.5*deltaT*deltaT));
