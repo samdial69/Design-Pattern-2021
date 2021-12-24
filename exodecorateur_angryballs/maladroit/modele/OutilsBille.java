@@ -90,7 +90,7 @@ return false;
  * @return a : le vecteur accélération résultant
  * 
  * */
-public static Vecteur gestionAccélérationNewton(Bille cetteBille, Vector<Bille> billes)
+public static Vecteur gestionAccelerationNewton(Bille cetteBille, Vector<Bille> billes)
 {
 
 //--- on récupère d'abord dans autresBilles toutes les billes sauf celle-ci ----
