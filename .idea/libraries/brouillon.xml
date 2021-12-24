@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="brouillon">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/exodecorateur_angryballs_maladroit_sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/malibrairiegui.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mesmaths_sources_avec_awt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

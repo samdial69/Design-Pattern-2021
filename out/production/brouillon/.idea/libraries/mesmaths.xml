@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mesmaths">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mesmaths/solveur.zip!/" />
+      <root url="jar://$PROJECT_DIR$/mesmaths/MesMaths.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,1 @@
+jar -cvfM exodecorateur_angryballs_maladroit_sources.jar exodecorateur_angryballs/maladroit/*.* exodecorateur_angryballs/maladroit/vues/*.* exodecorateur_angryballs/maladroit/modele/*.* ../malibrairiegui/outilsvues/Outils.* ../malibrairiegui/outilsvues/EcouteurTerminaison.* 

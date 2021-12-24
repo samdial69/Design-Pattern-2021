@@ -1,0 +1,3 @@
+jar -cvfM exodecorateur_angryballs_maladroit_sources.jar exodecorateur_angryballs/maladroit/*.*
+jar -uvfM exodecorateur_angryballs_maladroit_sources.jar exodecorateur_angryballs/maladroit/vues/*.* 
+jar -uvfM exodecorateur_angryballs_maladroit_sources.jar exodecorateur_angryballs/maladroit/modele/*.* 
