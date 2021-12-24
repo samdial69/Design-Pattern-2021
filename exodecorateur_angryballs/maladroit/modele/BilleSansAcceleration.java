@@ -1,4 +1,14 @@
 package exodecorateur_angryballs.maladroit.modele;
 
-public class BilleSansAcceleration {
+import java.util.Vector;
+
+public class BilleSansAcceleration extends BilleAvecAcceleration{
+    public BilleSansAcceleration(Bille billeADecorer) {
+        super(billeADecorer);
+    }
+
+    @Override
+    public void contributionAcceleration(Vector<Bille> billes) {
+        //Cette bille ne possède pas de vitesse du coup elle ne contribue à l'accélération des autres billes
+    }
 }
