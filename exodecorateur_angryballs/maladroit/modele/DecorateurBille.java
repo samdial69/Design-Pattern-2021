@@ -1,5 +1,6 @@
 package exodecorateur_angryballs.maladroit.modele;
 
+import exodecorateur_angryballs.maladroit.modele.visitor.VisitorDessine;
 import mesmaths.geometrie.base.Vecteur;
 
 import java.awt.*;
@@ -39,6 +40,11 @@ public abstract class DecorateurBille extends Bille {
     @Override
     public int getClef() {
         return this.billeADecorer.getClef();
+    }
+
+    @Override
+    public void accept(VisitorDessine visitorDessine) {
+        visitorDessine.visite(this);
     }
 
     public Bille getBilleADecorer() {

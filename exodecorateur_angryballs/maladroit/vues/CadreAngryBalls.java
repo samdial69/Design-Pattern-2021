@@ -68,7 +68,7 @@ return this.billard.getHeight();
 @Override
 public void miseAJour()
 {
-this.billard.repaint();
+this.billard.paint();
 }
 
 /* (non-Javadoc)
