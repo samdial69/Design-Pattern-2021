@@ -2,8 +2,8 @@ package exodecorateur_angryballs.maladroit.modele;
 
 import java.util.Vector;
 
-public class BilleSansAcceleration extends BilleAvecAcceleration{
-    public BilleSansAcceleration(Bille billeADecorer) {
+public class BilleAbsenceAcceleration extends BilleAvecAcceleration{
+    public BilleAbsenceAcceleration(Bille billeADecorer) {
         super(billeADecorer);
     }
 

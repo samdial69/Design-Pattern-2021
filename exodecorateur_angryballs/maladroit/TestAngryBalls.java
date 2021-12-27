@@ -65,11 +65,52 @@ v4 = Vecteur.créationAléatoire(-vMax, -vMax, vMax, vMax);
 
 //--------------- ici commence la partie à changer ---------------------------------
 
-billes.add(new         BilleMvtRURebond(p0, rayon, v0, Color.red));
-billes.add(new      BilleMvtPesanteurFrottementRebond(p1, rayon, v1, new Vecteur(0,0.001), Color.yellow));
-billes.add(new              BilleMvtNewtonFrottementRebond(p2, rayon, v2, Color.green));
-billes.add(new              BilleMvtRUPasseMurailles(p3, rayon, v3, Color.cyan));
-billes.add(new BilleMvtNewtonArret(p4, rayon, v4,  Color.black));
+//billes.add(new         BilleMvtRURebond(p0, rayon, v0, Color.red));
+//billes.add(new      BilleMvtPesanteurFrottementRebond(p1, rayon, v1, new Vecteur(0,0.001), Color.yellow));
+//billes.add(new              BilleMvtNewtonFrottementRebond(p2, rayon, v2, Color.green));
+//billes.add(new              BilleMvtRUPasseMurailles(p3, rayon, v3, Color.cyan));
+//billes.add(new BilleMvtNewtonArret(p4, rayon, v4,  Color.black));
+
+    //Création de billes normales
+    Bille b= new BilleNormale(p0, rayon, v0, Color.red);
+    Bille b2= new BilleNormale(p1, rayon, v1, Color.yellow);
+    Bille b3 = new BilleNormale(p2, rayon, v2, Color.green);
+    Bille b4 = new BilleNormale(p3, rayon, v3, Color.cyan);
+    Bille b5 = new BilleNormale(p4, rayon, v4,  Color.black);
+
+    //Ceci remplace le Mvt rectiligne uniforme avec rebond
+    b = new BilleAbsenceAcceleration(b);
+    b = new BilleRebondSurBord(b);
+
+    //Rebond-Frottement-Pesanteur
+    b2 = new BilleRebondSurBord(b2);
+    b2 = new BilleAvecFrottementVisqueux(b2);
+    b2 = new BilleAvecPesanteur(b2,new Vecteur(0,0.001));
+
+    //Rebond-Frottement-Attraction(Newton)
+    b3 = new BilleRebondSurBord(b3);
+    b3 = new BilleAvecFrottementVisqueux(b3);
+    b3 = new BilleAttirerParLesAutres(b3);
+
+
+
+    //Passe Muraille
+    b4 = new BilleAbsenceAcceleration(b4);
+    b4 = new BillePasseMuraille(b4);
+
+
+    //Attraction(Newton)-Bloquer par un bord
+
+    b5 = new BilleAttirerParLesAutres(b5);
+    b5 = new BilleBloquerParUnBord(b5);
+
+
+    billes.add(b);
+    billes.add(b2);
+    billes.add(b3);
+    billes.add(b4);
+    billes.add(b5);
+
 
 //---------------------- ici finit la partie à changer -------------------------------------------------------------
 
