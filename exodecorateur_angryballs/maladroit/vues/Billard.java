@@ -27,12 +27,22 @@ this.billes = billes;
     @Override
     public void paint(Graphics graphics)
     {
-    int i;
+//        if (this.getBufferStrategy() == null){
+//            try{
+//                createBufferStrategy(2);
+//            }catch (Exception exception){
+//                return;
+//            }
+//        }
+//        graphics = this.getBufferStrategy().getDrawGraphics();
+//        graphics.clearRect(0,0,this.getWidth(),this.getHeight());
+        int i;
     
-    for ( i = 0; i < this.billes.size(); ++i)
-        this.billes.get(i).dessine(graphics);
+        for ( i = 0; i < this.billes.size(); ++i)
+            this.billes.get(i).dessine(graphics);
     
-    //System.out.println("billes dans le billard = " + billes);
+//        this.getBufferStrategy().show();
+//        graphics.dispose();
     }
 
     

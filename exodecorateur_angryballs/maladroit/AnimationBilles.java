@@ -1,8 +1,10 @@
 package exodecorateur_angryballs.maladroit;
 
+import java.util.Observable;
 import java.util.Vector;
 
 import exodecorateur_angryballs.maladroit.modele.Bille;
+import exodecorateur_angryballs.maladroit.vues.CadreAngryBalls;
 import exodecorateur_angryballs.maladroit.vues.VueBillard;
 
 /**
@@ -11,12 +13,12 @@ import exodecorateur_angryballs.maladroit.vues.VueBillard;
  * 
  * ICI : IL N'Y A RIEN A CHANGER
  * */
-public class AnimationBilles  implements Runnable
+public class AnimationBilles extends Observable implements Runnable
 {
 
 
 Vector<Bille> billes;   // la liste de toutes les billes en mouvement 
-VueBillard vueBillard;    // la vue responsable du dessin des billes
+CadreAngryBalls cadreAngryBalls;    // la vue responsable du dessin des billes du billard
 private Thread thread;    // pour lancer et arrêter les billes
 
 
@@ -24,13 +26,20 @@ private static final double COEFF = 0.5;
 
 /**
  * @param billes
- * @param vueBillard
+ * @param cadreAngryBalls
  */
-public AnimationBilles(Vector<Bille> billes, VueBillard vueBillard)
+public AnimationBilles(Vector<Bille> billes, CadreAngryBalls cadreAngryBalls)
 {
 this.billes = billes;
-this.vueBillard = vueBillard;
+this.cadreAngryBalls = cadreAngryBalls;
 this.thread = null;     //est-ce utile ?
+
+    /* Observable mise en place */
+    EcouteurBoutonLancer écouteurBoutonLancer = new EcouteurBoutonLancer(this);
+    EcouteurBoutonArreter écouteurBoutonArrêter = new EcouteurBoutonArreter(this);
+
+    this.cadreAngryBalls.lancerBilles.addActionListener(écouteurBoutonLancer);             // pourrait être remplacé par Observable - Observer
+    this.cadreAngryBalls.arrêterBilles.addActionListener(écouteurBoutonArrêter);           // pourrait être remplacé par Observable - Observer
 }
 
 @Override
@@ -58,10 +67,12 @@ try
             billeCourante.deplacer(deltaT);                 // mise à jour position et vitesse de cette bille
             billeCourante.gestionAcceleration(billes);      // calcul de l'accélération subie par cette bille
             billeCourante.gestionCollisionBilleBille(billes);
-            billeCourante.collisionContour( 0, 0, vueBillard.largeurBillard(), vueBillard.hauteurBillard());        //System.err.println("billes = " + billes);
+            billeCourante.collisionContour( 0, 0, cadreAngryBalls.largeurBillard(), cadreAngryBalls.hauteurBillard());        //System.err.println("billes = " + billes);
             }
-        
-        vueBillard.miseAJour();                                // on prévient la vue qu'il faut redessiner les billes
+
+        // on prévient la vue qu'il faut redessiner les billes
+        this.setChanged();
+        this.notifyObservers(this);
       
        
         Thread.sleep((int)deltaT);                          // deltaT peut être considéré comme le délai entre 2 flashes d'un stroboscope qui éclairerait la scène

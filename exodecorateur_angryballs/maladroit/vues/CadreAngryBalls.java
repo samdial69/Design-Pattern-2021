@@ -1,6 +1,8 @@
 package exodecorateur_angryballs.maladroit.vues;
 
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.Vector;
 
 import exodecorateur_angryballs.maladroit.modele.Bille;
@@ -17,10 +19,10 @@ import outilsvues.Outils;
  *  
  * 
  * */
-public class CadreAngryBalls extends Frame implements VueBillard
+public class CadreAngryBalls extends Frame implements VueBillard, Observer
 {
 TextField présentation;
-Billard billard;
+public Billard billard;
 public Button lancerBilles, arrêterBilles;
 Panel haut, centre, bas;
 
@@ -79,5 +81,8 @@ this.setVisible(true);
 }
 
 
-
+    @Override
+    public void update(Observable o, Object arg) {
+        this.miseAJour();
+    }
 }

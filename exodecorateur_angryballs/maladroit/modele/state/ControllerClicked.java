@@ -22,7 +22,7 @@ public class ControllerClicked extends StateController{
                 manager.billes.remove(bille);
                 manager.billes.add(this.billeAPiloter);
                 manager.setCurrentController(this.nextController);
-                return;//A tester si on sort de la boucle
+                break;//À tester si on sort de la boucle
             }
         }
     }

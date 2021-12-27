@@ -1,10 +1,12 @@
 package exodecorateur_angryballs.maladroit;
 
 import exodecorateur_angryballs.maladroit.modele.*;
+import exodecorateur_angryballs.maladroit.modele.state.StateManager;
 import exodecorateur_angryballs.maladroit.vues.CadreAngryBalls;
 import mesmaths.geometrie.base.Vecteur;
 
 import java.awt.*;
+import java.util.Observer;
 import java.util.Vector;
 //import exodecorateur_angryballs.modele.*;
 
@@ -111,6 +113,8 @@ v4 = Vecteur.créationAléatoire(-vMax, -vMax, vMax, vMax);
     billes.add(b4);
     billes.add(b5);
 
+    /*Décoration pilotée test*/
+    StateManager manager = new StateManager(cadre.billard,billes);
 
 //---------------------- ici finit la partie à changer -------------------------------------------------------------
 
@@ -121,17 +125,18 @@ System.out.println("billes = " + billes);
 //-------------------- création de l'objet responsable de l'animation (c'est un thread séparé) -----------------------
 
 AnimationBilles animationBilles = new AnimationBilles(billes, cadre);
+animationBilles.addObserver(cadre);
 
 //----------------------- mise en place des écouteurs de boutons qui permettent de contrôler (un peu...) l'application -----------------
 
-EcouteurBoutonLancer écouteurBoutonLancer = new EcouteurBoutonLancer(animationBilles);
-EcouteurBoutonArreter écouteurBoutonArrêter = new EcouteurBoutonArreter(animationBilles); 
+//EcouteurBoutonLancer écouteurBoutonLancer = new EcouteurBoutonLancer(animationBilles);
+//EcouteurBoutonArreter écouteurBoutonArrêter = new EcouteurBoutonArreter(animationBilles);
 
 //------------------------- activation des écouteurs des boutons et ça tourne tout seul ------------------------------
 
 
-cadre.lancerBilles.addActionListener(écouteurBoutonLancer);             // pourrait être remplacé par Observable - Observer 
-cadre.arrêterBilles.addActionListener(écouteurBoutonArrêter);           // pourrait être remplacé par Observable - Observer
+//cadre.lancerBilles.addActionListener(écouteurBoutonLancer);             // pourrait être remplacé par Observable - Observer
+//cadre.arrêterBilles.addActionListener(écouteurBoutonArrêter);           // pourrait être remplacé par Observable - Observer
 
 
 

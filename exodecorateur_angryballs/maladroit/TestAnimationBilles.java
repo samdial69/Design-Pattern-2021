@@ -41,8 +41,8 @@ int c = System.in.read();
 
 VueBillard vueBillardFactice = new VueBillardFactice();
 
-AnimationBilles animation = new AnimationBilles(billes, vueBillardFactice);
-animation.lancerAnimation();
+//AnimationBilles animation = new AnimationBilles(billes, vueBillardFactice);
+//animation.lancerAnimation();
 }
 
 }
