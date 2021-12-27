@@ -6,7 +6,6 @@ import exodecorateur_angryballs.maladroit.vues.CadreAngryBalls;
 import mesmaths.geometrie.base.Vecteur;
 
 import java.awt.*;
-import java.util.Observer;
 import java.util.Vector;
 //import exodecorateur_angryballs.modele.*;
 

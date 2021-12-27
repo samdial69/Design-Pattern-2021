@@ -3,6 +3,7 @@ package exodecorateur_angryballs.maladroit.modele;
 import java.awt.*;
 import java.util.Vector;
 
+import exodecorateur_angryballs.maladroit.modele.visitor.VisitorDessine;
 import mesmaths.cinematique.Cinematique;
 import mesmaths.cinematique.Collisions;
 import mesmaths.geometrie.base.Geop;
@@ -38,20 +39,22 @@ public abstract class Bille {
         return ro * Geop.volumeSphère(this.getRayon());
     }
 
-    public void dessine(Graphics g) {
-        int width, height;
-        int xMin, yMin;
+    public abstract void accept(VisitorDessine visitorDessine);
 
-        xMin = (int) Math.round(this.getPosition().x - this.getRayon());
-        yMin = (int) Math.round(this.getPosition().y - this.getRayon());
-
-        width = height = 2 * (int) Math.round(this.getRayon());
-
-        g.setColor(this.getCouleur());
-        g.fillOval(xMin, yMin, width, height);
-        g.setColor(Color.CYAN);
-        g.drawOval(xMin, yMin, width, height);
-    }
+//    public void dessine(Graphics g) {
+//        int width, height;
+//        int xMin, yMin;
+//
+//        xMin = (int) Math.round(this.getPosition().x - this.getRayon());
+//        yMin = (int) Math.round(this.getPosition().y - this.getRayon());
+//
+//        width = height = 2 * (int) Math.round(this.getRayon());
+//
+//        g.setColor(this.getCouleur());
+//        g.fillOval(xMin, yMin, width, height);
+//        g.setColor(Color.CYAN);
+//        g.drawOval(xMin, yMin, width, height);
+//    }
 
     /**
      * mise à jour de position et vitesse à t+deltaT à partir de position et vitesse à l'instant t
