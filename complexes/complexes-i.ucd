@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="complexes-i" id="complexes" metadata="uml2-1.0" initialized="true" tag="1000" key="32303036313030362073696D706C65736578656D706C65732F56616CE9726965">
+  <children xsi:type="editmodel:ClassEditModel" name="ComplexeTest" location="50,593" size="184,133" id="complexes/ComplexeTest" runTimeClassModel="testGetX(),testComplexeDoubleDouble(),testGetY()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,54">
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexeDoubleDouble" id="complexes/ComplexeTest#testComplexeDoubleDouble()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetX" id="complexes/ComplexeTest#testGetX()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetY" id="complexes/ComplexeTest#testGetY()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Complexe" location="50,50" size="226,493" id="complexes/Complexe" runTimeClassModel="somme(Lcomplexes.Complexe;),arg(),Complexe(DD),Complexe(),opposé(),toString(),produit(D),equals(Ljava.lang.Object;),produit(Lcomplexes.Complexe;),conjugué(),un,getX(),différence(Lcomplexes.Complexe;),getY(),inverse(),moduleInfini(),i,module(),zéro,Complexe(D),y,module2(),x">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="i" id="complexes/Complexe#i"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="un" id="complexes/Complexe#un"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x" id="complexes/Complexe#x"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="y" id="complexes/Complexe#y"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="zéro" id="complexes/Complexe#zéro"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="203,324">
+      <children xsi:type="editmodel:MethodEditModel" name="Complexe" id="complexes/Complexe#Complexe(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Complexe" id="complexes/Complexe#Complexe()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Complexe" id="complexes/Complexe#Complexe(DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="arg" id="complexes/Complexe#arg()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="conjugué" id="complexes/Complexe#conjugué()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="différence" id="complexes/Complexe#différence(Lcomplexes.Complexe;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="complexes/Complexe#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getX" id="complexes/Complexe#getX()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getY" id="complexes/Complexe#getY()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="inverse" id="complexes/Complexe#inverse()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="module" id="complexes/Complexe#module()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="module2" id="complexes/Complexe#module2()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="moduleInfini" id="complexes/Complexe#moduleInfini()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="opposé" id="complexes/Complexe#opposé()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="produit" id="complexes/Complexe#produit(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="produit" id="complexes/Complexe#produit(Lcomplexes.Complexe;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="somme" id="complexes/Complexe#somme(Lcomplexes.Complexe;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="complexes/Complexe#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Complexe2Test" location="574,50" size="184,295" id="complexes/Complexe2Test" runTimeClassModel="testEqualsObject(),testModule2(),testComplexeDoubleDouble(),testGetX(),testComplexeDouble(),testSomme(),testComplexe(),testToString(),testModule(),testGetY(),testConjugué(),testProduit()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,216">
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexe" id="complexes/Complexe2Test#testComplexe()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexeDouble" id="complexes/Complexe2Test#testComplexeDouble()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexeDoubleDouble" id="complexes/Complexe2Test#testComplexeDoubleDouble()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testConjugué" id="complexes/Complexe2Test#testConjugué()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testEqualsObject" id="complexes/Complexe2Test#testEqualsObject()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetX" id="complexes/Complexe2Test#testGetX()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetY" id="complexes/Complexe2Test#testGetY()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testModule" id="complexes/Complexe2Test#testModule()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testModule2" id="complexes/Complexe2Test#testModule2()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testProduit" id="complexes/Complexe2Test#testProduit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testSomme" id="complexes/Complexe2Test#testSomme()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testToString" id="complexes/Complexe2Test#testToString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ComplexeTest3" location="326,50" size="198,475" id="complexes/ComplexeTest3" runTimeClassModel="testArg(),x4,testOpposé(),testComplexeDoubleDouble(),testModule2(),testComplexeDouble(),x1,eps,testSomme(),testGetY(),testProduit(),testEqualsObject(),tearDown(),x2,testGetX(),x3,ComplexeTest3(Ljava.lang.String;),testComplexe(),testToString(),testModule(),testConjugué(),setUp()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="84,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="eps" id="complexes/ComplexeTest3#eps"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x1" id="complexes/ComplexeTest3#x1"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x2" id="complexes/ComplexeTest3#x2"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x3" id="complexes/ComplexeTest3#x3"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x4" id="complexes/ComplexeTest3#x4"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="175,306">
+      <children xsi:type="editmodel:MethodEditModel" name="ComplexeTest3" id="complexes/ComplexeTest3#ComplexeTest3(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setUp" id="complexes/ComplexeTest3#setUp()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tearDown" id="complexes/ComplexeTest3#tearDown()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testArg" id="complexes/ComplexeTest3#testArg()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexe" id="complexes/ComplexeTest3#testComplexe()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexeDouble" id="complexes/ComplexeTest3#testComplexeDouble()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testComplexeDoubleDouble" id="complexes/ComplexeTest3#testComplexeDoubleDouble()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testConjugué" id="complexes/ComplexeTest3#testConjugué()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testEqualsObject" id="complexes/ComplexeTest3#testEqualsObject()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetX" id="complexes/ComplexeTest3#testGetX()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGetY" id="complexes/ComplexeTest3#testGetY()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testModule" id="complexes/ComplexeTest3#testModule()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testModule2" id="complexes/ComplexeTest3#testModule2()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testOpposé" id="complexes/ComplexeTest3#testOpposé()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testProduit" id="complexes/ComplexeTest3#testProduit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testSomme" id="complexes/ComplexeTest3#testSomme()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testToString" id="complexes/ComplexeTest3#testToString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=1"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Naturel" methodSorter="Naturel" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterlas="true"/>
+</editmodel:ClassDiagramEditModel>
